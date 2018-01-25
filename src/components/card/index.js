@@ -12,6 +12,7 @@ export default class Card extends Component {
 						alt="Logo"
 					/>
 					<h1 class={style.position}>Vincent Hirtz</h1>
+					<h3 class={style.name}>25 years old</h3>
 					<h3 class={style.name}>Dev front</h3>
 					<h3 class={style.name}>Rouen, France</h3>
 					<div>
