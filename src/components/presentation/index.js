@@ -1,4 +1,6 @@
 import { h, Component } from "preact";
+import { Timeline } from "react-twitter-widgets";
+import InstagramEmbed from "react-instagram-embed";
 import style from "./style.less";
 
 export default class Card extends Component {
@@ -34,17 +36,30 @@ export default class Card extends Component {
 				<div class={style.line} />
 				<div class="pure-g">
 					<div class="pure-u-1-2">
-						<div class={style.button}>
-							<button class="pure-button pure-button-primary">
-								Télécharger CV
-							</button>
-						</div>
+							<InstagramEmbed
+								url="https://www.instagr.am/p/BSJxrajBJ7y/"
+								maxWidth={900}
+								hideCaption={false}
+								containerTagName="div"
+								protocol=""
+								onLoading={() => {}}
+								onSuccess={() => {}}
+								onAfterRender={() => {}}
+								onFailure={() => {}}
+							/>
 					</div>
 					<div class="pure-u-1-2">
 						<div class={style.button}>
-							<button class="pure-button pure-button-primary">
-								Télécharger CV
-							</button>
+							<Timeline
+								dataSource={{
+									sourceType: "profile",
+									screenName: "vincenthirtzspn"
+								}}
+								options={{
+									username: "vincenthirtzspn",
+									height: "900"
+								}}
+							/>
 						</div>
 					</div>
 				</div>
