@@ -1,14 +1,8 @@
 import { h, Component } from "preact";
 import Instafeed from "instafeed.js";
+import style from './style.less';
 
 export default class Instagram extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			data: []
-		};
-	}
-
 	componentDidMount() {
 		document.addEventListener("DOMContentLoaded", function() {
 			var tutorialFeed = new Instafeed({
@@ -18,7 +12,7 @@ export default class Instagram extends Component {
 				accessToken: "190487201.ba4c844.107ae16db94e4cf1b65d89995683220b",
 				resolution: "standard_resolution",
 				sortBy: "most-recent",
-				limit: 9,
+				limit: 32,
 				template:
 					'<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
 			});
@@ -28,6 +22,6 @@ export default class Instagram extends Component {
 	}
 
 	render() {
-		return <div id="instafeed" />;
+		return <div id="instafeed" class={style.photos} />;
 	}
 }

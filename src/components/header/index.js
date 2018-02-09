@@ -8,7 +8,7 @@ export default class Header extends Component {
 			<header class={style.header}>
 				<nav>
 					<Link href="/">Home</Link>
-					<Link href="/projects">Projects</Link>
+					<Link href="/projets">Projets</Link>
 					<Link href="/work">Work</Link>
 					<Link href="/blog">Blog</Link>
 				</nav>
