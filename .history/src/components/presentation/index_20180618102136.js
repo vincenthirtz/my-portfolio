@@ -1,6 +1,6 @@
 import { h, Component } from "preact";
 import { Timeline } from "react-twitter-widgets";
-import Instagram from "../instagram/index";
+import Instagram from '../instagram/index';
 import style from "./style.less";
 
 export default class Card extends Component {
@@ -36,9 +36,9 @@ export default class Card extends Component {
 				<div class={style.line} />
 				<div class="pure-g">
 					<div class="pure-u-1-2">
-						<Instagram />
+						<Instagram url='https://instagram.com/p/fA9uwTtkSN/media/' />
 					</div>
-
+					
 					<div class="pure-u-1-2">
 						<div class={style.button}>
 							<Timeline
