@@ -106,6 +106,6 @@
     "test": "test"
   },
   "repository": {
-    "type": "git",
+    "type": "git"
   }
 }
